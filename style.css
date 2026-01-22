@@ -30,12 +30,41 @@ a:hover { color: var(--accent); }
 /* NAVIGATION */
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Allinea a destra */
+    align-items: center;
     padding: 20px 40px;
-    font-weight: 600;
+    gap: 15px; /* Spazio tra i due pulsanti */
 }
-.navbar a { margin-left: 20px; font-size: 1.1rem; }
-.navbar a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 28px;      /* Grandezza del bottone */
+    border-radius: 50px;     /* Bordi arrotondati (Pill shape) */
+    transition: all 0.3s ease;
+    
+    /* Stile di base (Bottone non attivo) */
+    background-color: rgba(255, 255, 255, 0.05); /* Sfondo leggermente visibile */
+    color: var(--text-main);
+    border: 1px solid var(--border);
+}
+
+/* Effetto al passaggio del mouse */
+.navbar a:hover {
+    background-color: var(--bg-card);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px); /* Si alza leggermente */
+}
+
+/* Stile per il bottone ATTIVO (Pagina corrente) */
+.navbar a.active {
+    background-color: var(--accent);  /* Diventa tutto blu */
+    color: #ffffff;                   /* Testo bianco */
+    border-color: var(--accent);
+    box-shadow: 0 4px 15px rgba(88, 166, 255, 0.4); /* Effetto luce/glow */
+}
 
 /* HERO SECTION (SHARED) */
 .hero {
@@ -116,18 +145,35 @@ a:hover { color: var(--accent); }
 .tech-tag { font-family: monospace; background: #30363d; padding: 2px 6px; border-radius: 4px; }
 
 /* CV PAGE STYLES */
+/* Container per allineare i bottoni */
+.download-buttons-container {
+    display: flex;               /* Mette gli elementi in riga */
+    justify-content: center;     /* Li centra nella pagina */
+    gap: 15px;                   /* Spazio tra un bottone e l'altro */
+    flex-wrap: wrap;             /* Se lo schermo è piccolo (mobile), vanno a capo in automatico */
+    margin: 0 auto 40px;         /* Margine sotto per staccare dal testo */
+}
+
+/* Stile dei singoli bottoni */
 .cv-download-btn {
-    display: block;
-    width: fit-content;
-    margin: 0 auto 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: var(--bg-card);
     border: 1px solid var(--accent);
     color: var(--accent);
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 6px;
     font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
-.cv-download-btn:hover { background: var(--accent); color: white; }
+
+.cv-download-btn:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px); /* Piccolo effetto movimento al passaggio del mouse */
+}
 
 .cv-section { margin-bottom: 40px; }
 .cv-section h2 { color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 20px; font-size: 1.5rem; }
