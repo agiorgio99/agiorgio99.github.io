@@ -90,15 +90,41 @@ a:hover { color: var(--accent); }
 
 .bio { max-width: 600px; margin: 0 auto; margin-bottom: 30px; font-size: 1.1rem; }
 
-.tag-badge {
-    background: #238636; /* Green badge style */
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
+/* Scroll indicator container */
+.scroll-indicator {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #58a6ff; /* Match your link/accent color */
+}
+
+.scroll-indicator p {
     font-size: 0.9rem;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* The thick animated arrow */
+.scroll-indicator i {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+/* Bounce animation logic */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 /* MAIN CONTAINER */
@@ -200,3 +226,5 @@ footer {
     .navbar { justify-content: center; }
     .cv-item .date { float: none; display: block; margin-bottom: 5px; }
 }
+
+
