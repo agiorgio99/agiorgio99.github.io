@@ -11,11 +11,12 @@
 
     <nav class="navbar">
         <a href="index.html" class="active">Portfolio</a>
-        <a href="cv.html">CV</a>
+        <!-- updated link to the new about page -->
+        <a href="about.html">About Me</a>
     </nav>
 
     <header class="hero">
-        <img src="https://github.com/agiorgio99.png" alt="Antonello Giorgio" class="profile-pic">
+        <!-- removed the profile picture from here as requested -->
         <h1>Antonello Giorgio</h1>
         <span class="handle">@agiorgio99</span>
         
@@ -26,7 +27,7 @@
         </div>
 
         <p class="bio">
-            AI Engineer, currently specializing in Sound and Music Computing.<br>
+            AI Engineer specialised in Audio & Music.<br>
             Below you can find some of my projects and activities. <br>
             Thanks for having a look!
         </p>
@@ -42,6 +43,15 @@
         <h2 class="section-header">Master in Sound & Music Computing (UPF-Barcelona)</h2>
         <div class="grid">
             
+            <div class="card" style="border-color: #d29922;">
+                <h3>ExpressiveALT (Automatic Lyrics Transcription)</h3>
+                <p>Master Thesis evaluating ASR models on expressive singing voices. Generated synthetic training data simulating vocal techniques (vibrato, falsetto) via WORLD-vocoder and fine-tuned Whisper, reducing the Word Error Rate from 15.8% to 11.3%.</p>
+                <div class="card-meta">
+                    <span class="tech-tag" style="background-color: #d29922; color: #fff;">THESIS</span>
+                    <a href="https://github.com/agiorgio99" target="_blank"><i class="fas fa-book-reader"></i> View Project</a>
+                </div>
+            </div>
+
             <div class="card">
                 <h3>Bach Polyphonic Transformer</h3>
                 <p>A multi-track generative model for Bach Chorales using the MMM representation. Adapts the Transformer (GPT-2) architecture to compose 4-part SATB harmony through track-concatenated symbolic sequences, with support for note-density conditioning and sequential voice generation.</p>
@@ -62,7 +72,7 @@
 
             <div class="card">
                 <h3>Monteverdi's Madrigals Analysis</h3>
-                <p>Computational analysis of Monteverdi's nine madrigal books, tracking the shift from Renaissance polyphony to early Baroque monody. Uses a custom heuristic framework on MusicXML scores to quantify dissonance vocabulary, Basso Continuo evolution, and Stile Concitato across the two practices.</p>
+                <p>Computational stylistic analysis of Monteverdi's nine madrigal books using Python. Designed three music theory-grounded features on MusicXML scores, quantitatively confirming a historical style break at Book 5.</p>
                 <div class="card-meta">
                     <span class="tech-tag">Computational Musicology</span>
                     <a href="https://github.com/CallMeRafaelMP/Monteverdi-s-Sprezzatura-Analysis" target="_blank"><i class="fas fa-external-link-alt"></i> View Code</a>
@@ -74,11 +84,10 @@
         <h2 class="section-header">MSc in AI & Robotics (Sapienza-Rome)</h2>
         <div class="grid">
 
-            <div class="card" style="border-color: #d29922;"> <h3>Master Thesis on LLM-Powered Emotion Recognition from Music-Evoked EEG Signals</h3>
+            <div class="card" style="border-color: #d29922;"> 
+                <h3>LLM-Powered Emotion Recognition from EEG</h3>
                 <p>
-                    Proposed a novel dual-branch architecture combining <strong>Large Language Models (GPT-2, LLaMA)</strong> 
-                    and <strong>Dynamic Graph CNNs</strong>. Implemented a self-supervised masked reconstruction task 
-                    with LoRA fine-tuning, achieving State-of-the-Art performance on the DEAP dataset.
+                    Proposed a dual-branch architecture combining a Transformer encoder, Dynamic Graph CNNs, and fine-tuning a Large Language Model (LLaMA 3.1 8B). Surpassed previous benchmark results on the DEAP dataset (67% accuracy for arousal, 65% for valence).
                 </p>
                 <div class="card-meta">
                     <span class="tech-tag" style="background-color: #d29922; color: #fff;">THESIS</span> 
@@ -90,7 +99,7 @@
 
             <div class="card">
                 <h3>Tennis Stroke AQA</h3>
-                <p>Action Quality Assessment on Tennis Strokes using BiLSTM Framework. Starting from a video recording, it produces a score that evaluates how closely the movement approximates the one of a professional.</p>
+                <p>Trained a neural network to score tennis stroke execution from videos against professional references. Improved predictions by 11% compared to previous best methods using a BiLSTM framework.</p>
                 <div class="card-meta">
                     <span class="tech-tag">Advanced CV</span>
                     <a href="https://github.com/agiorgio99/Action-Quality-Assessment-on-Tennis-Strokes-executions-using-a-BiLSTM-based-Deep-Learning-Framework" target="_blank"><i class="fas fa-external-link-alt"></i> View Code</a>
@@ -156,7 +165,6 @@
                     <a href="https://gitlab.com/agiorgio99/mylidarmatcher" target="_blank"><i class="fab fa-gitlab"></i> View GitLab</a>
                 </div>
             </div>
-
 
         </div>
 

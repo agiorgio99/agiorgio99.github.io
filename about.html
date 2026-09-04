@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Antonello Giorgio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            line-height: 1.8;
+        }
+        .about-image {
+            flex: 0 0 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .about-image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .contact-links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #333; 
+        }
+        .contact-links p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        .contact-links a {
+            color: #d29922; 
+            text-decoration: none;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Portfolio</a>
+        <a href="about.html" class="active">About Me</a>
+    </nav>
+
+    <main class="container">
+        
+        <div class="about-container">
+            <div class="about-text">
+                <h1>Hi, I'm Antonello Giorgio</h1>
+                <p>
+                    Music and technology are my passions. I would describe myself as an AI Engineer and creative technologist specialised in audio and music.
+                </p>
+                <p>
+                    I recently completed my MSc in Sound and Music Computing at Universitat Pompeu Fabra (UPF) in Barcelona, where my research focused on deep learning for audio, DSP, and generative music. For my thesis, <em>ExpressiveALT</em>, I worked on the automatic transcription of lyrics in expressive singing, generating synthetic training data to simulate vocal techniques and improve speech recognition models.
+                </p>
+                <p>
+                    Before moving to Spain, I earned my BSc in Computer and Control Engineering and an MSc in Artificial Intelligence and Robotics from Sapienza University of Rome. During my master's, I had the amazing opportunity to work as a Graduate Student Researcher at Imperial College London. There, I developed a neural network architecture combining Transformers, Graph Convolutional Networks, and Large Language Models to predict emotional responses to music directly from EEG brainwaves.
+                </p>
+                <p>
+                    My technical stack is heavily focused on AI and audio. I work daily with Python, C++, Java, and C, utilizing frameworks like PyTorch, Hugging Face, and WandB. For audio and music processing, I regularly use tools like DDSP, music21, Audacity, and MuseScore. I also have a solid background in software design and web development (HTML, JS, CSS, PHP, SQL).
+                </p>
+                <p>
+                    Studying and working abroad in the UK and Spain has been incredibly formative, allowing me to adapt to diverse cultural contexts and collaborate on international teams in both English (C1) and Spanish (B2). I consider myself a fast learner with strong problem-solving and project management skills, honed through years of team-based university projects.
+                </p>
+                <p>
+                    Outside of coding, I've played the piano for four years and studied Pop/R&B singing for a year. I also played tennis for five years. When I’m not working on a new project, you can usually find me watching movies and TV series, playing video games, travelling, or looking for new experiences!
+                </p>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://github.com/agiorgio99.png" alt="Antonello Giorgio">
+            </div>
+        </div>
+
+        <div class="contact-links">
+            <h2>Resume & Contact</h2>
+            <p>If you'd like a more detailed breakdown of my professional and academic background, feel free to download my CV:</p>
+            
+            <div class="download-buttons-container" style="display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0 30px 0;">
+                <a href="CV_Antonello_Giorgio_ENG.pdf" class="cv-download-btn" download>
+                    <i class="fas fa-file-pdf"></i> English CV
+                </a>
+                <a href="CV_Antonello_Giorgio_ITA.pdf" class="cv-download-btn" download>
+                    <i class="fas fa-file-pdf"></i> Italian CV
+                </a>
+                <a href="CV_Antonello_Giorgio_ESP.pdf" class="cv-download-btn" download>
+                    <i class="fas fa-file-pdf"></i> Spanish CV
+                </a>
+            </div>
+
+            <p><strong>Email:</strong> <a href="mailto:antonellogiorgio99@gmail.com">antonellogiorgio99@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/antonello-giorgio-165796228" target="_blank">https://www.linkedin.com/in/antonello-giorgio-165796228</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/agiorgio99" target="_blank">https://github.com/agiorgio99</a></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Antonello Giorgio.</p>
+    </footer>
+
+</body>
+</html>
